@@ -9,7 +9,10 @@ attr_reader :name, :roster
   end
 
   def add_student(student_name, grade)
-    roster[grade] = []
+    # if the roster doesn't contain grade yet
+    if roster.include?(grade) do
+      roster[grade] = []
+    end
     roster[grade] << student_name
   end
 end
