@@ -18,5 +18,5 @@ attr_reader :name, :roster
   def grade(grade)
     roster[grade]
   end
-  
+
 end
