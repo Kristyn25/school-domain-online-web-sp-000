@@ -14,4 +14,9 @@ attr_reader :name, :roster
     end
     roster[grade] << student_name
   end
+
+  def grade(grade)
+    roster[grade]
+  end
+  
 end
